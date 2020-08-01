@@ -1,6 +1,6 @@
 new Vue({
-    el: '#root',
-    data: {
-      message: 'Hello Vue!'
-    }
-  })
+	el: '#root',
+  data: {
+  	count: 2
+  }
+});
