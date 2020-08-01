@@ -4,9 +4,11 @@
 </head>
 <body>
     <div id='root'>
-        <div v-show='count===1'>
-          Green
-        </div>
+        Sign Up
+        <br>
+        <input v-model="email">
+        <br>
+        <button onclick="alert('signed up')" v-bind:disabled="email.length<2">Submit</button>
     </div>
     <script src='script.js'></script>
 </body>
