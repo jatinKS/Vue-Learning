@@ -8,7 +8,7 @@
         <br>
         <input v-model="email">
         <br>
-        <button onclick="alert('signed up')" v-bind:disabled="email.length<2">Submit</button>
+        <button onclick="alert('signed up')" :disabled="email.length<2">Submit</button>
     </div>
     <script src='script.js'></script>
 </body>
