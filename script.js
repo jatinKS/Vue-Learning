@@ -13,5 +13,13 @@ new Vue({
             this.cats.push({name:this.newCat});
             this.newCat = '';
         }
-    }
+    },
+    filters:{
+        capitalize:function(value){
+            return value.toUpperCase();
+        },
+        kittify:function(value){
+            return value+"y";
+        }
+    },
 });

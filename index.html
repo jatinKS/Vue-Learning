@@ -18,7 +18,7 @@
         <!-- <button @click="addKitty">+ Add Cat</button> -->
         <button v-on:click="addKitty">+ Add Cat</button>
         <ul>
-            <li v-for="cat in cats">{{cat.name}}</li>
+            <li v-for="cat in cats">{{cat.name  | capitalize | kittify}}</li>
         </ul>
     </div>
     <script src='script.js'></script>
