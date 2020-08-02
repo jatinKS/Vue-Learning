@@ -2,10 +2,9 @@ new Vue({
 	el: '#root',
     data: {
         cats:[
-            'kitkat',
-            'fish',
-            'henry',
-            'bosco'
+            {name:'kitkat'},
+            {name:'fish'},
+            {name:'henry'},
         ]
     }
 });
