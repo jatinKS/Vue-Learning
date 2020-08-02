@@ -12,6 +12,8 @@
 </head>
 <body>
     <div id='root'>
+        <input v-model="newCat">
+        <button v-on:click="addKitty">+ Add Cat</button>
         <ul>
             <li v-for="cat in cats">{{cat.name}}</li>
         </ul>
