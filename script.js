@@ -10,7 +10,8 @@ new Vue({
     },
     methods:{
         addKitty:function(){
-            this.cats.push({name:this.newCat})
+            this.cats.push({name:this.newCat});
+            this.newCat = '';
         }
     }
 });
