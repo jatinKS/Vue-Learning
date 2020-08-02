@@ -1,6 +1,11 @@
 new Vue({
 	el: '#root',
     data: {
-        email: ''
+        cats:[
+            'kitkat',
+            'fish',
+            'henry',
+            'bosco'
+        ]
     }
 });

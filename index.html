@@ -12,11 +12,9 @@
 </head>
 <body>
     <div id='root'>
-        Sign Up
-        <br>
-        <input v-model="email" :class="[email.length<2?'red':'green']">
-        <br>
-        <button onclick="alert('signed up')" :disabled="email.length<2">Submit</button>
+        <ul>
+            <li v-for="cat in cats">{{cat}}</li>
+        </ul>
     </div>
     <script src='script.js'></script>
 </body>
