@@ -12,7 +12,10 @@
 </head>
 <body>
     <div id='root'>
-        <input v-model="newCat">
+        <!-- <input v-model="newCat" @keyup.enter="addKitty"> -->
+        <input v-model="newCat" v-on:keyup.enter="addKitty">
+        <!-- <button v-on:click.prevent.stop="addKitty">+ Add Cat</button> -->
+        <!-- <button @click="addKitty">+ Add Cat</button> -->
         <button v-on:click="addKitty">+ Add Cat</button>
         <ul>
             <li v-for="cat in cats">{{cat.name}}</li>
