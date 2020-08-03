@@ -22,4 +22,10 @@ new Vue({
             return value+"y";
         }
     },
+    computed:{
+        kittifyName: function(){
+            if(this.newCat.length>1)
+                return this.newCat+" y";
+        }
+    }
 });

@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id='root'>
+        <cat-list :cats='cats' />
+    </div>
+    <script>
+        Vue.component('cat-list',{
+            props:['cats'],
+            template:`
+                <ul>
+                    <li v-for="cat in cats">{{cat.name}}</li>
+                </ul>
+            `
+        })
+        app = new Vue({
+            el: '#root',
+            component:[
+                'cat-list'
+            ],
+            data:{
+                cats:[
+                    {name:'kitkat'},
+                    {name:'fish'},
+                    {name:'henry'}
+                ]
+            }
+        });
+    </script>
+</body>
+</html>
